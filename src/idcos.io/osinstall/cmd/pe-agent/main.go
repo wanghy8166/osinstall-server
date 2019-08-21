@@ -1,4 +1,4 @@
-package main
+﻿package main
 
 import (
 	"errors"
@@ -344,7 +344,7 @@ func installWindows() error {
 }
 
 func copyFirstBoot() error {
-	var dir = "C:\firstboot"
+	var dir = "c:\\firstboot"
 	if !utils.CheckFileIsExist("c:/windows") {
 		dir = "D:/firstboot"
 	}
